@@ -1,0 +1,56 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue May  5 00:25:40 2020
+| Host         : DESKTOP-1UQ86B2 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file vga_methodology_drc_routed.rpt -pb vga_methodology_drc_routed.pb -rpx vga_methodology_drc_routed.rpx
+| Design       : vga
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++----------+------------------+------------------------------------------------+------------+
+| Rule     | Severity         | Description                                    | Violations |
++----------+------------------+------------------------------------------------+------------+
+| TIMING-6 | Critical Warning | No common primary clock between related clocks | 2          |
+| HPDR-1   | Warning          | Port direction inconsistency                   | 2          |
++----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks CLK25MHZ_CLK25MHz and CLK25MHZ_CLK25MHz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK25MHZ_CLK25MHz] -to [get_clocks CLK25MHZ_CLK25MHz_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks CLK25MHZ_CLK25MHz_1 and CLK25MHZ_CLK25MHz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK25MHZ_CLK25MHz_1] -to [get_clocks CLK25MHZ_CLK25MHz]
+Related violations: <none>
+
+HPDR-1#1 Warning
+Port direction inconsistency  
+Hierarchical port PS2_CLK direction INPUT is not consistent with the directions of the cell pins found at that level of the netlist hierarchy. Please review the design and consider changing the port direction. No other driver was expected for the net (PS2_CLK) connected to this Port, but at least one was found.
+Related violations: <none>
+
+HPDR-1#2 Warning
+Port direction inconsistency  
+Hierarchical port PS2_DATA direction INPUT is not consistent with the directions of the cell pins found at that level of the netlist hierarchy. Please review the design and consider changing the port direction. No other driver was expected for the net (PS2_DATA) connected to this Port, but at least one was found.
+Related violations: <none>
+
+

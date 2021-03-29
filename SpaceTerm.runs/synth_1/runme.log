@@ -1,0 +1,846 @@
+
+*** Running vivado
+    with args -log vga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source vga.tcl -notrace
+Command: synth_design -top vga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20000 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 796.906 ; gain = 234.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:5]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HT bound to: 800 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VB bound to: 35 - type: integer 
+	Parameter VT bound to: 527 - type: integer 
+	Parameter SPACE_KEY bound to: 8'b00101001 
+	Parameter W_KEY bound to: 8'b00011101 
+	Parameter A_KEY bound to: 8'b00011100 
+	Parameter S_KEY bound to: 8'b00011011 
+	Parameter D_KEY bound to: 8'b00100011 
+	Parameter TAB_KEY bound to: 8'b00001101 
+	Parameter BACK_SPACE_KEY bound to: 8'b01100110 
+	Parameter ENTER_KEY bound to: 8'b01011010 
+	Parameter BREAK_CODE bound to: 8'b11110000 
+	Parameter NUM_PLANETS bound to: 5 - type: integer 
+	Parameter DEFAULT_ORBIT_SPEED bound to: 10000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'circle_math' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'circle_math' (1#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/mod_m_counter.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (2#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/mod_m_counter.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'sin_table.txt' is read successfully [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'twos_complement' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/twos_complement.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'twos_complement' (4#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/twos_complement.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'PULLUP' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:69974]
+INFO: [Synth 8-6155] done synthesizing module 'PULLUP' (5#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:69974]
+WARNING: [Synth 8-6104] Input port 'PS2_CLK' has an internal driver [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:19]
+WARNING: [Synth 8-6104] Input port 'PS2_DATA' has an internal driver [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'CLK25MHz' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.runs/synth_1/.Xil/Vivado-8496-DESKTOP-1UQ86B2/realtime/CLK25MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CLK25MHz' (6#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.runs/synth_1/.Xil/Vivado-8496-DESKTOP-1UQ86B2/realtime/CLK25MHz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ps2rx' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/ps2rx.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ps2rx' (7#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/ps2rx.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'lfsr16' [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/lfsr16.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr16' (8#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/lfsr16.sv:2]
+WARNING: [Synth 8-324] index 6 out of range [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:216]
+WARNING: [Synth 8-324] index 6 out of range [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:216]
+WARNING: [Synth 8-324] index 6 out of range [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:217]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (9#1) [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 871.457 ; gain = 309.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 871.457 ; gain = 309.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 871.457 ; gain = 309.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 871.457 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/ip/CLK25MHz/CLK25MHz/CLK25MHz_in_context.xdc] for cell 'vga_clock'
+Finished Parsing XDC File [c:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/ip/CLK25MHz/CLK25MHz/CLK25MHz_in_context.xdc] for cell 'vga_clock'
+Parsing XDC File [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 989.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 989.207 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 989.207 ; gain = 426.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 989.207 ; gain = 426.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/ip/CLK25MHz/CLK25MHz/CLK25MHz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/ip/CLK25MHz/CLK25MHz/CLK25MHz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for vga_clock. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 989.207 ; gain = 426.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2rx'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:13]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:14]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:15]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:15]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:298]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:300]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colors_reg[5]' and it is trimmed from '13' to '12' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colors_reg[4]' and it is trimmed from '13' to '12' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colors_reg[3]' and it is trimmed from '13' to '12' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colors_reg[2]' and it is trimmed from '13' to '12' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colors_reg[1]' and it is trimmed from '13' to '12' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/vga.sv:230]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 | 00000000000000000000000000000000
+                     dps |                              010 | 00000000000000000000000000000001
+                  iSTATE |                              100 | 00000000000000000000000000000010
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 989.207 ; gain = 426.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     21 Bit       Adders := 12    
+	   2 Input     20 Bit       Adders := 6     
+	   3 Input     19 Bit       Adders := 12    
+	   3 Input     11 Bit       Adders := 12    
+	   2 Input     11 Bit       Adders := 12    
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 22    
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               20 Bit    Registers := 6     
+	               19 Bit    Registers := 12    
+	               18 Bit    Registers := 12    
+	               16 Bit    Registers := 24    
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 15    
+	               10 Bit    Registers := 13    
+	                8 Bit    Registers := 19    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 12    
+	                1 Bit    Registers := 16    
++---Multipliers : 
+	                26x26  Multipliers := 1     
++---ROMs : 
+	                              ROMs := 12    
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 12    
+	   2 Input     16 Bit        Muxes := 12    
+	   2 Input     11 Bit        Muxes := 17    
+	   3 Input     10 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 51    
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 12    
+	   3 Input     11 Bit       Adders := 12    
+	   2 Input     11 Bit       Adders := 12    
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 22    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 14    
+	               10 Bit    Registers := 13    
+	                8 Bit    Registers := 18    
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 15    
++---Multipliers : 
+	                26x26  Multipliers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 17    
+	   3 Input     10 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 51    
+	   2 Input      1 Bit        Muxes := 28    
+Module ps2rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module lfsr16 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module mod_m_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module circle_math 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+Module sin_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module twos_complement 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_squared_plus_y_squared1' and it is trimmed from '19' to '3' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:15]
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_squared_plus_y_squared1' and it is trimmed from '19' to '3' bits. [C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/circle_math.sv:15]
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP x_squared_plus_y_squared1, operation Mode is: A2*B2.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: register x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: operator x_squared_plus_y_squared1 is absorbed into DSP x_squared_plus_y_squared1.
+DSP Report: Generating DSP radius_squared_reg, operation Mode is: (A*B)'.
+DSP Report: register radius_squared_reg is absorbed into DSP radius_squared_reg.
+DSP Report: operator radius_squared0 is absorbed into DSP radius_squared_reg.
+WARNING: [Synth 8-6040] Register orbit_angles_sin_reg[1]_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_cos_reg[1] driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_sin_reg[2]_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_cos_reg[2] driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_sin_reg[3]_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_cos_reg[3] driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_sin_reg[4]_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_cos_reg[4] driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_sin_reg[5]_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register orbit_angles_cos_reg[5] driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[1].cos0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[1].cos_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[1].sin0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[1].sin_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[2].cos0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[2].cos_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[2].sin0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[2].sin_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[3].cos0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[3].cos_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[3].sin0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[3].sin_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[4].cos0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[4].cos_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[4].sin0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[4].sin_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[5].cos0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[5].cos_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[5].sin0/data_reg_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register genblk3[5].sin_comp/out_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (meta_reg)
+INFO: [Synth 8-3886] merging instance 'reset_reg' (FD) to 'meta_reg'
+INFO: [Synth 8-3886] merging instance 'orbit_distances_reg[1][8]' (FDRE) to 'orbit_distances_reg[1][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\orbit_distances_reg[1][9] )
+INFO: [Synth 8-3886] merging instance 'orbit_distances_reg[2][8]' (FDRE) to 'orbit_distances_reg[2][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\orbit_distances_reg[2][9] )
+INFO: [Synth 8-3886] merging instance 'orbit_distances_reg[3][8]' (FDRE) to 'orbit_distances_reg[3][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\orbit_distances_reg[3][9] )
+INFO: [Synth 8-3886] merging instance 'orbit_distances_reg[4][8]' (FDRE) to 'orbit_distances_reg[4][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\orbit_distances_reg[4][9] )
+INFO: [Synth 8-3886] merging instance 'orbit_distances_reg[5][8]' (FDRE) to 'orbit_distances_reg[5][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\orbit_distances_reg[5][9] )
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111111]__0' (FD) to 'circle_math:/x_coord_reg[0]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111110]__0' (FD) to 'circle_math:/x_coord_reg[1]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_coord_reg[-1111111110]' (FD) to 'circle_math:/x_coord_reg[16]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111109]__0' (FD) to 'circle_math:/x_coord_reg[2]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_coord_reg[-1111111111]' (FD) to 'circle_math:/x_coord_reg[16]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111111]' (FD) to 'circle_math:/y_coord_reg[0]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111110]' (FD) to 'circle_math:/y_coord_reg[1]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/y_coord_reg[-1111111110]' (FD) to 'circle_math:/y_coord_reg[16]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_squared_plus_y_squared1[-1111111109]' (FD) to 'circle_math:/y_coord_reg[2]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/y_coord_reg[-1111111111]' (FD) to 'circle_math:/y_coord_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][12]' (FDE) to 'ring_colors_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][0]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][0]' (FDRE) to 'colors_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][12]' (FDRE) to 'colors_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][1]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][1]' (FDRE) to 'colors_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][2]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][2]' (FDRE) to 'colors_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][3]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[0][3] )
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][4]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][4]' (FDSE) to 'colors_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][5]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][5]' (FDSE) to 'colors_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][6]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][6]' (FDSE) to 'colors_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][7]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][7]' (FDSE) to 'colors_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[5][8]' (FDE) to 'ring_colors_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[4][8]' (FDE) to 'ring_colors_reg[4][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[3][8]' (FDE) to 'ring_colors_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[2][8]' (FDE) to 'ring_colors_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[1][8]' (FDE) to 'ring_colors_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][8]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][8]' (FDSE) to 'colors_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][9]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][9]' (FDSE) to 'colors_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[0][10]' (FDE) to 'ring_colors_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'colors_reg[0][10]' (FDSE) to 'colors_reg[0][11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ring_colors_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_ring_reg[0] )
+INFO: [Synth 8-3886] merging instance 'circle_math:/y_coord_reg[16]' (FD) to 'circle_math:/y_coord_reg[17]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/y_coord_reg[17]' (FD) to 'circle_math:/y_coord_reg[18]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_coord_reg[16]' (FD) to 'circle_math:/x_coord_reg[17]'
+INFO: [Synth 8-3886] merging instance 'circle_math:/x_coord_reg[17]' (FD) to 'circle_math:/x_coord_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (meta_reg)
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_state_reg_reg[2]) is unused and will be removed from module ps2rx.
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[5][0]' (FDE) to 'colors_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[4][0]' (FDE) to 'colors_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[3][0]' (FDE) to 'colors_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[2][0]' (FDE) to 'colors_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ring_colors_reg[1][0]' (FDE) to 'colors_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\colors_reg[1][1] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[0][5]' (FDE) to 'rs_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[0][6]' (FDE) to 'rs_reg[0][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[0][7] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[1][4]' (FDE) to 'rs_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[1][5]' (FDE) to 'rs_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[1][6]' (FDE) to 'rs_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[1][7] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[2][4]' (FDE) to 'rs_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[2][5]' (FDE) to 'rs_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[2][6]' (FDE) to 'rs_reg[2][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[2][7] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[3][4]' (FDE) to 'rs_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[3][5]' (FDE) to 'rs_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[3][6]' (FDE) to 'rs_reg[3][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[3][7] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[4][4]' (FDE) to 'rs_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[4][5]' (FDE) to 'rs_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[4][6]' (FDE) to 'rs_reg[4][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[4][7] )
+INFO: [Synth 8-3886] merging instance 'rs_reg[5][4]' (FDE) to 'rs_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[5][5]' (FDE) to 'rs_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'rs_reg[5][6]' (FDE) to 'rs_reg[5][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rs_reg[5][7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 989.207 ; gain = 426.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
+|vga         | p_0_out    | 256x16        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | A2*B2       | 20     | 18     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|circle_math | (A*B)'      | 11     | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A2*B        | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga         | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1023.988 ; gain = 461.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1147.797 ; gain = 585.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'orbit_angles_sin_reg[1][0]' (FD) to 'orbit_angles_cos_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'orbit_angles_sin_reg[2][0]' (FD) to 'orbit_angles_cos_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'orbit_angles_sin_reg[3][0]' (FD) to 'orbit_angles_cos_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'orbit_angles_sin_reg[4][0]' (FD) to 'orbit_angles_cos_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'orbit_angles_sin_reg[5][0]' (FD) to 'orbit_angles_cos_reg[5][0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1176.375 ; gain = 614.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|vga         | ps2rx0/b_reg_reg[8] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |CLK25MHz      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CLK25MHz  |     1|
+|2     |CARRY4    |  1256|
+|3     |DSP48E1   |    32|
+|4     |DSP48E1_2 |     5|
+|5     |DSP48E1_3 |     6|
+|6     |LUT1      |   519|
+|7     |LUT2      |  2157|
+|8     |LUT3      |  1057|
+|9     |LUT4      |  2093|
+|10    |LUT5      |   517|
+|11    |LUT6      |  1213|
+|12    |MUXF7     |   260|
+|13    |MUXF8     |   120|
+|14    |PULLUP    |     2|
+|15    |SRL16E    |     1|
+|16    |FDRE      |   948|
+|17    |FDSE      |     5|
+|18    |IBUF      |     3|
+|19    |OBUF      |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------------+------+
+|      |Instance                 |Module             |Cells |
++------+-------------------------+-------------------+------+
+|1     |top                      |                   | 10209|
+|2     |  \genblk2[1].orbitCntr  |mod_m_counter      |    76|
+|3     |  \genblk2[2].orbitCntr  |mod_m_counter_5    |    76|
+|4     |  \genblk2[3].orbitCntr  |mod_m_counter_6    |    76|
+|5     |  \genblk2[4].orbitCntr  |mod_m_counter_7    |    76|
+|6     |  \genblk2[5].orbitCntr  |mod_m_counter_8    |    76|
+|7     |  \genblk1[0].bodies     |circle_math        |   162|
+|8     |  \genblk1[1].bodies     |circle_math_0      |   260|
+|9     |  \genblk1[2].bodies     |circle_math_1      |   270|
+|10    |  \genblk1[3].bodies     |circle_math_2      |   266|
+|11    |  \genblk1[4].bodies     |circle_math_3      |   265|
+|12    |  \genblk1[5].bodies     |circle_math_4      |   269|
+|13    |  \genblk3[1].cos0       |sin_rom            |   152|
+|14    |  \genblk3[1].cos_comp   |twos_complement    |     4|
+|15    |  \genblk3[1].sin0       |sin_rom_9          |   160|
+|16    |  \genblk3[1].sin_comp   |twos_complement_10 |     4|
+|17    |  \genblk3[2].cos0       |sin_rom_11         |   152|
+|18    |  \genblk3[2].cos_comp   |twos_complement_12 |     4|
+|19    |  \genblk3[2].sin0       |sin_rom_13         |   160|
+|20    |  \genblk3[2].sin_comp   |twos_complement_14 |     4|
+|21    |  \genblk3[3].cos0       |sin_rom_15         |   152|
+|22    |  \genblk3[3].cos_comp   |twos_complement_16 |     4|
+|23    |  \genblk3[3].sin0       |sin_rom_17         |   160|
+|24    |  \genblk3[3].sin_comp   |twos_complement_18 |     4|
+|25    |  \genblk3[4].cos0       |sin_rom_19         |   152|
+|26    |  \genblk3[4].cos_comp   |twos_complement_20 |     4|
+|27    |  \genblk3[4].sin0       |sin_rom_21         |   160|
+|28    |  \genblk3[4].sin_comp   |twos_complement_22 |     4|
+|29    |  \genblk3[5].cos0       |sin_rom_23         |   152|
+|30    |  \genblk3[5].cos_comp   |twos_complement_24 |     4|
+|31    |  \genblk3[5].sin0       |sin_rom_25         |   160|
+|32    |  \genblk3[5].sin_comp   |twos_complement_26 |     4|
+|33    |  lfsr16_0               |lfsr16             |    83|
+|34    |  pan0                   |mod_m_counter_27   |    70|
+|35    |  ps2rx0                 |ps2rx              |    83|
++------+-------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1176.902 ; gain = 496.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1176.902 ; gain = 614.691
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1176.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1679 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1178.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+135 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1178.441 ; gain = 880.316
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1178.441 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.runs/synth_1/vga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_utilization_synth.rpt -pb vga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 00:24:03 2020...

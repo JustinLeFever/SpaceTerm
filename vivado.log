@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar 28 23:30:32 2021
+# Process ID: 2360
+# Current directory: C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8432 C:\Users\lefev\Desktop\Stuff\Term Project - SpaceTerm\SpaceTerm\SpaceTerm\SpaceTerm.xpr
+# Log file: C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm/vivado.log
+# Journal file: C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm/SpaceTerm.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/lfsr16.sv', nor could it be found using path 'C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/lfsr16.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/risingEdgeDetector.sv', nor could it be found using path 'C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/risingEdgeDetector.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/lefev/Desktop/Stuff/Term Project - SpaceTerm/SpaceTerm/testbench_behav1.wcfg', nor could it be found using path 'C:/Users/lefev/Desktop/SpaceTerm/testbench_behav1.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1

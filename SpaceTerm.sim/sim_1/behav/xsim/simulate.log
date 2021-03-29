@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File sin_table.txt referenced on C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sources_1/new/sin_rom.sv at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+$stop called at time : 8025 ns : File "C:/Users/lefev/Desktop/SpaceTerm/SpaceTerm/SpaceTerm.srcs/sim_1/new/testbench.sv" Line 20
